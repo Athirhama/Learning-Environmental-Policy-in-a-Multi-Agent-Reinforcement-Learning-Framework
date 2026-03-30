@@ -56,7 +56,6 @@ class EcoSystem:
     
             # Termination penalty: Triggers an immediate episode end with a heavily negative reward (death penalty)
             social_welfare = self.death_penalty
-            #individual_profits = [self.death_penalty for _ in range(self.n_firms)]
 
             return self._get_state(), social_welfare, individual_profits, done
     
